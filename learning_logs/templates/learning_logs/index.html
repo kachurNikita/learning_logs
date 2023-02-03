@@ -6,15 +6,10 @@
 </head>
 <body>
   <div>
-    {% block content %}
-   <ul>
-     {% for topic in topics %}
-     <li>{{ topic }}</li>
-     {% empty %}
-     <li>No topics have been added yet</li>
-     {% endfor %}
-   </ul>
-    {% endblock content %}
+      {% extends 'learning_logs/base.html' %}
+      {% block content %}
+      <p>Learning logs helps you keep track of your learning</p>
+      {% endblock content %}
   </div>
 </body>
 </html>
