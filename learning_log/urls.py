@@ -21,4 +21,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # Gets all urls from my learning_logs app
     path('', include(('learning_logs.urls', 'learning_logs'), namespace='learning_logs')),
+    # path('users/', include(('users.urls', 'users')), namespace='users'),
+    path('users/', include(('users.urls', 'users'), namespace='users')),
 ]
